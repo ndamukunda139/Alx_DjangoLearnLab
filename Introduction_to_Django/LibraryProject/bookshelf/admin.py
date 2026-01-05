@@ -8,6 +8,6 @@ admin.site.register(Book)
 class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'pablished_year')
     search_fields = ('title', 'author')
-    list_filter = ('pablished_year',)
+    list_filter = ('published_year',)
     
 admin.site.register(Book, BookAdmin)
